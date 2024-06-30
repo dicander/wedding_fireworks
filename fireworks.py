@@ -64,9 +64,9 @@ def resurrect_for_fireworks():
 def init():
     for i in range(N_PARTICLES):
         yellow = random.randint(0, 255)
-        particles.append(Particle(2.0, 1.1, 0, 0, pygame.Color(random.randint(yellow, 255),
-                                                           yellow,
-                                                           0) , 0))
+        particles.append(Particle(2.0, 1.1, 0, 0, pygame.Color(random.randint(0, 255),
+                                                           random.randint(0, 255),
+                                                           random.randint(0, 255)) , 0))
 
 def main():
     pygame.init()
